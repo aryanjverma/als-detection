@@ -52,11 +52,6 @@ This repository contains code and data for classifying ALS vs. normal samples us
 
 2. **Test the SVM model:**
 	```powershell
-	python svm.py
-	```
-	This will train and save the SVM model to `svm.joblib`.
-	Then, to evaluate the SVM model:
-	```powershell
 	python svm_test.py
 	```
 	This will print the confusion matrix, sensitivity, specificity, and overall accuracy for the SVM approach.
