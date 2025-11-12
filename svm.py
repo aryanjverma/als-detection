@@ -1,8 +1,6 @@
-import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 import joblib
-from sklearn.metrics import confusion_matrix
 import random
 
 X_train_temp = []
