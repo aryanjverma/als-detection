@@ -89,7 +89,7 @@ This repository contains code and data for classifying ALS vs. normal samples us
 
 ## Notes
 - The approach uses leave-one-out cross-validation for robust evaluation.
-- SVM was tested but did not perform as well as the neural network.
+- By changing hyperparameters, I was able to optimize both the SVM and the NN to have high accuracy, specificity, and sensitivity.
 - Make sure that samples are in the same format as those in the csv's in ALSDetection_data.
 
 ---
