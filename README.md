@@ -1,6 +1,6 @@
 ## ALS Detection Using Neural Networks and Support Vector Machines
 
-This project implements a machine learning pipeline to detect Amyotrophic Lateral Sclerosis (ALS) from CSV-formatted biosignal data. It uses a shallow neural network (MLPClassifier) and Support Vector Machines (SVC) to distinguish between ALS and normal samples, achieving high accuracy.
+This project implements a machine learning pipeline to detect Amyotrophic Lateral Sclerosis (ALS) from CSV-formatted acoustic data. It uses a shallow neural network (MLPClassifier) and Support Vector Machines (SVC) to distinguish between ALS and normal samples, achieving high accuracy.
 
 ---
 
@@ -15,12 +15,12 @@ This project implements a machine learning pipeline to detect Amyotrophic Latera
 ---
 
 ## Project Overview
-This repository contains code and data for classifying ALS vs. normal samples using biosignal features. The model is trained on provided CSV files and evaluated for accuracy, sensitivity, and specificity.
+This repository contains code and data for classifying ALS vs. normal samples using acoustic features. The model is trained on provided CSV files and evaluated for accuracy, sensitivity, and specificity.
 
 ## Approach
 - **Data Preparation:**
   - Data is split into ALS (`A01.csv`-`A11.csv`) and normal (`N01.csv`-`N11.csv`) samples in the `ALSDetection_data/` folder.
-  - Each file contains biosignal features as comma-separated values.
+  - Each file contains acoustic features as comma-separated values.
   - For training, one pair (ALS and normal) is randomly left out for testing (leave-one-out cross-validation).
 - **Model:**
 	- Two approaches are provided:
@@ -75,7 +75,7 @@ This repository contains code and data for classifying ALS vs. normal samples us
 ## Data Format
 - All data is stored in the `ALSDetection_data/` directory.
 - Files are named `A01.csv`-`A11.csv` (ALS) and `N01.csv`-`N11.csv` (Normal).
-- Each file contains rows of comma-separated biosignal features.
+- Each file contains rows of comma-separated acoustic features.
 
 ## Results
 - **Neural Network (MLPClassifier):**
