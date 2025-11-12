@@ -36,10 +36,9 @@ for i in range(1,12):
             y.append(0)
 print("Data processsed")
 model, scaler = joblib.load("svm.joblib")
-# I used a MLP Classifier from Scikit Learn, using a leave-out training split where I left out one
-# nomral sample and one ALS sample for testing, as this was suggested by Dr.Wang to prevent over 
-# fitting. SVM was not good enough for my standards getting 70-80% accuracy, but this shallow neural
-# network got 94.6% accuracy.  
+# I used a SVC (Support Vector Classifier) from Scikit Learn, using a leave-out training split where 
+# I left out one nomral sample and one ALS sample for testing, as this was suggested by Dr.Wang to prevent over 
+# fitting.  
 
 X_test = scaler.transform(X)
 y_pred = model.predict(X_test) 
