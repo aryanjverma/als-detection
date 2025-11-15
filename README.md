@@ -86,6 +86,7 @@ This repository contains code and data for classifying ALS vs. normal samples us
 - The approach uses leave-one-out cross-validation for robust evaluation.
 - By changing hyperparameters, I was able to optimize both the SVM and the NN to have high accuracy, specificity, and sensitivity.
 - Make sure that samples are in the same format as those in the csv's in ALSDetection_data.
-
+## Credit
+- ChatGPT helped me write the code and taught me about the different model types. 
 ---
 
